@@ -26,7 +26,10 @@ while True:
         alumnos.append(alumno)
         print("alumnos guardado con éxito")
     elif opc =="2":
-        pass
+        print("Ver Alumnos")
+        for a in alumnos:
+            print(f"El alumno {a["nombre"]} de codigo {a["codigo"]} tiene {a["edad"]} años")
+            #print(a)
     elif opc =="3":
         print("fin del programa")
         break
