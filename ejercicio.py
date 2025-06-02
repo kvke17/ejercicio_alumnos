@@ -1,6 +1,7 @@
 #ejercicio de los alumnos:
 import os, msvcrt
 
+alumnos=[]
 
 menu="""Menu
 1. agregar alumno
@@ -13,7 +14,17 @@ while True:
     opc=input("ingrese opcion: ")
     os.system("cls")
     if opc =="1":
-        pass
+        print("Agregar alumno")
+        codigo = input("ingrese código: ")
+        Edad = int(input("ingrese edad: "))
+        nombre = input("ingrese nombre: ")
+        alumno={
+            "codigo": codigo,
+            "nombre": nombre,
+            "edad": Edad
+        }
+        alumnos.append(alumno)
+        print("alumnos guardado con éxito")
     elif opc =="2":
         pass
     elif opc =="3":
