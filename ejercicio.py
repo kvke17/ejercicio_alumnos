@@ -17,7 +17,12 @@ while True:
         print("Agregar alumno")
         codigo = input("ingrese código: ")
         Edad = int(input("ingrese edad: "))
-        nombre = input("ingrese nombre: ")
+        while True:
+            nombre = input("ingrese nombre: ").strip().title()
+            if len(nombre)>=3 and nombre.isalpha():
+                break
+            else:
+                print("error nombre muy corto")
         alumno={
             "codigo": codigo,
             "nombre": nombre,
